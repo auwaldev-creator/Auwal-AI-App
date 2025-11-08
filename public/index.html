@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ha">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auwal AI Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+</head>
+<body>
+
+    <div id="loading-screen">
+        <div class="loader-content">
+            <div class="loader-3d"></div>
+            <h1>Barka da Zuwa</h1>
+            <p>Ana shirya muku **Auwal AI**...</p>
+            <div class="creator-info">
+                <p>Wanda ya kirkira:</p>
+                <p><strong>Auwal Bashar (Auwal Business)</strong></p>
+                <p>Dalibi a Taraba State University, Jalingo.</p>
+                <p>Kwararre mai tasowa a fannin AI da Full-Stack Development, mai burin kawo sauyi ta hanyar fasaha.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="app-container" style="display: none;">
+        
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Auwal AI</h2>
+                <button id="new-chat-btn" class="sidebar-btn">
+                    <span class="material-icons-sharp">add_comment</span> Sabon Hira
+                </button>
+            </div>
+            <nav id="chat-history">
+                <h3>Tarihin Hira</h3>
+            </nav>
+            <div class="sidebar-footer">
+                <button id="theme-toggle" class="sidebar-btn">
+                    <span class="material-icons-sharp" id="theme-icon">light_mode</span>
+                    <span id="theme-text">Yanayin Haske</span>
+                </button>
+            </div>
+        </aside>
+
+        <main class="chat-area">
+            <header class="chat-header">
+                <h3>Auwal AI Assistant</h3>
+            </header>
+            
+            <div id="chat-messages">
+                <div class="message welcome-message">
+                    <img src="https://i.ibb.co/3sS0kjr/ai-bot-icon.png" alt="AI" class="avatar">
+                    <div class="text">
+                        Sannu! Ni ne Auwal AI. Me kake so mu tattauna? Zaka iya rubuta min a Hausa ko Turanci.
+                    </div>
+                </div>
+            </div>
+
+            <footer class="chat-input-area">
+                <div class="input-wrapper">
+                    <textarea id="prompt-input" placeholder="What's on your mind?"></textarea>
+                    
+                    <select id="mode-select">
+                        <option value="chat" selected>Chat (Rubutu)</option>
+                        <option value="image">Image (Hoto)</option>
+                    </select>
+                    
+                    <button id="send-btn">
+                        <span class="material-icons-sharp">send</span>
+                    </button>
+                </div>
+                <p class="footer-text">Ginin Auwal Bashar</p>
+            </footer>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
